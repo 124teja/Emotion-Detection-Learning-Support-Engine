@@ -1,0 +1,159 @@
+text,emotion,confidence,response,field,timestamp
+i am not interested to listen the class,frustrated,0.9929385731313466,Let's take a step back and try a different approach.,General,2026-07-13T10:10:15.538316
+"i am confused in dsa 
+",confused,0.3734593987464905,"It is completely normal to feel confused by Data Structures and Algorithms because these concepts are very abstract when you first see them. Please do not worry, as almost every computer science student struggles with this topic at the beginning.
+
+To make these concepts easier to grasp, try drawing the data structures like trees or linked lists on paper and tracing how the data moves step-by-step. Seeing how the algorithms work visually makes the actual code much easier to understand.
+
+As a great next step, pick just one simple structure today, like an array or a linked list, and practice writing a basic program to add and remove items from it. Taking it one small concept at a time will help you build your confidence and master the material.",Computer Science,2026-07-13T10:28:21.789722
+i am not understanding this plant structure,frustrated,0.3888182640075683,"I understand that learning plant structures can feel really frustrating and confusing at first. It is completely normal to feel this way when there are so many new parts and terms to memorize.
+
+A great strategy for Biology is to draw the plant structure yourself on a piece of paper and label each part, which helps your brain connect the visual shapes to their actual functions.
+
+Let's tackle this together, so please tell me which specific plant structure or diagram you are looking at and we can break it down step-by-step.",Biology,2026-07-13T10:33:57.648000
+"i am not understanding this topic
+",frustrated,0.4042754173278808,I understand this is frustrating! Let's try a simpler approach...,Biology,2026-07-13T10:40:08.233421
+"i am not understanding this topic
+",frustrated,0.4042754173278808,"It is completely natural to feel frustrated when a biology topic feels confusing, and you are definitely not alone in feeling this way. I am here to help you make sense of it.
+
+One great strategy for biology is to draw simple diagrams or flowcharts to visualize how different processes and parts connect. Seeing a picture can make complex terms and pathways a lot easier to understand.
+
+As a next step, tell me which specific topic or question you are working on right now. We can break it down together piece by piece.",Biology,2026-07-13T10:41:11.827051
+i didn't understand this letterss,frustrated,0.2926080822944641,"I can hear how frustrating it is to feel stuck on these letters, but please do not worry because literature can be tough to crack at first. 
+
+When you are reading letters in a story, a great strategy is to identify who is writing, who they are addressing, and what the main emotion of the writer is. Understanding the relationship between these two characters will help make the meaning of their words much clearer. 
+
+As a next step, why don't you share a short sentence or paragraph from the letters that is confusing you? We can look at it together and break it down step-by-step.",Literature,2026-07-13T10:46:20.810811
+i didn't understand this letterss,frustrated,0.2926080822944641,"I hear how frustrating this is, and it is completely normal to feel stuck when literature or older writing feels confusing. We can definitely get through this together.
+
+When you run into difficult letters or older texts, try reading the words out loud very slowly. Hearing the sounds of the words often helps your brain recognize their meaning much better than just reading them silently.
+
+Why don't you share a short sentence or paste the text you are looking at right now? We can take a look at it together and break it down step-by-step.",Literature,2026-07-13T10:47:18.018232
+i am not getting correct answer for this problem,frustrated,0.4045864343643188,"It is completely normal to feel frustrated when a physics problem is not working out as expected. Please do not worry, as working through these tough spots is a natural and important part of the learning process.
+
+One great strategy for physics is to draw a quick diagram of the scenario and list all of your known variables with their units. This visual map often makes it much easier to see which formula connects your clues to the correct answer.
+
+Whenever you are ready, please share the problem text or your current calculations with me. We can go through it step-by-step together to find where things got tricky!",Physics,2026-07-13T11:00:23.123448
+i am not getting this experiment ,frustrated,0.3867370188236236,"I completely understand why you are feeling frustrated right now, as psychology experiments can be really tricky to grasp at first. It is very common to feel this way, and we can definitely make sense of it together.
+
+When studying a psychology experiment, try breaking it down by identifying the independent variable (what the researchers changed) and the dependent variable (what they measured). Knowing these two main parts makes the rest of the study much easier to understand.
+
+To get started, please share the name of the experiment or a quick summary of what you are reading. We can take it one step at a time, and I am here to help you figure it out.",Psychology,2026-07-13T11:08:03.096583
+how to draw this picture for building construction,frustrated,0.4044434130191803,"I completely understand that figuring out how to start a building construction drawing can feel really frustrating. Technical drawings have a lot of complex details, and it is completely normal to feel overwhelmed when you first look at them.
+
+To make it easier, try breaking the drawing down by starting with the main grid lines and structural foundation before adding any walls or smaller details. This establishes a solid base and ensures your scale and alignment are correct from the very beginning.
+
+As a great next step, try sketching just the main structural outline on a piece of scratch paper first to get a feel for the proportions. Let me know what specific part of the building or detail you are trying to draw, and we can work through it step-by-step together.",Engineering,2026-07-13T11:14:47.500436
+ohh! this seems fascinating but now i am tired,frustrated,0.3777742683887481,"It is completely normal to feel exhausted when tackling fascinating but complex computer science concepts. Your brain is working hard, and feeling tired is just a sign that you have been deeply engaged.
+
+When you hit a wall, try stepping away from your computer because your mind will actually keep solving the programming logic in the background. This offline processing often leads to sudden breakthroughs once you rest.
+
+For now, close your laptop and take a well-deserved break to recharge. You can come back to this exciting problem tomorrow with a fresh mind and new energy.",Computer Science,2026-07-13T11:17:41.248252
+ohh! This seems fascinating but i am tired,frustrated,0.4022966623306274,"It is completely natural to feel exhausted when tackling fascinating but complex computer science topics. Taking a moment to recognize your fatigue is a great first step.
+
+When you are tired, try writing down your logic in plain English pseudocode instead of trying to write actual code. This helps you organize your thoughts without the stress of fighting with syntax errors.
+
+For now, step away from the screen and take a twenty-minute break to recharge your batteries. You can come back to this exciting problem later with a fresh mind and renewed energy.",Computer Science,2026-07-13T11:29:14.059424
+"I am so confused about this topic, I don't understand it",confident,0.9999999999780792,"It is completely natural to feel overwhelmed by complex computer science concepts, but your determination to tackle it shows great strength.
+
+When you feel stuck, try writing out the problem in plain English pseudocode before you attempt to write any actual code. This allows you to focus on the logic of the solution without worrying about programming syntax.
+
+For our next step, share the specific topic or question you are working on, and we can break down the very first part of it together.",Computer Science,2026-07-14T11:58:11.863500
+ohh! This seems fascinating but now i am tired,frustrated,0.9104405377210928,"I completely understand how you feel, as diving into exciting computer science topics can be both thrilling and mentally exhausting. It is totally normal to feel tired after stretching your brain with these complex concepts.
+
+A great strategy in computer science is to write down your current thoughts or some simple pseudocode on paper before you stop. This acts as a save state for your brain so you do not have to restart your thinking process later.
+
+For now, close your laptop and take a well-deserved break to rest. When you return with a fresh mind tomorrow, you will be ready to tackle this fascinating problem with brand new energy.",Computer Science,2026-07-14T12:01:06.914687
+ohh!This seems fascinating but i am tired,frustrated,0.9923157007424832,"It is completely normal to feel exhausted because learning computer science takes a lot of mental energy. I hear you, and it is okay to admit when your brain is simply full.
+
+When you are tired, try writing out your program steps in plain English pseudocode before writing any actual code. This computer science strategy saves your energy by separating the logic of the problem from the stress of programming syntax.
+
+For now, close your laptop and take a well-deserved rest to recharge. Whenever you are ready to come back, we can tackle this exciting problem together.",Computer Science,2026-07-14T12:15:42.989357
+ohh!This seems fascinating but now i am tired,frustrated,0.9104405377210928,"I completely understand how exhausting it can be to study fascinating but complex computer science concepts. It is totally normal to feel tired when your brain is working hard on these ideas.
+
+A great strategy in computer science is to step away from your screen when you start feeling drained. Taking a break actually allows your brain to subconsciously process the logic and find solutions.
+
+For now, close your laptop and get some well-deserved rest. When you feel refreshed, we can look at this problem together with a clear mind.",Computer Science,2026-07-14T12:16:06.301425
+ohh!This seems fascinating but now i am tired,frustrated,0.9104405377210928,"It is completely normal to feel tired and frustrated when tackling exciting but complex computer science topics. Recognizing that your brain has worked hard today is a great first step.
+
+When you are stuck or exhausted, try writing down your current progress in plain English, which is called pseudocode. This makes it much easier to resume your work later without losing your place.
+
+For now, close your laptop and take a well-deserved break to rest your mind. You can come back tomorrow with fresh eyes, and you will be amazed at how much clearer the problem will seem.",Computer Science,2026-07-14T12:23:12.053521
+ohh!This seems fascinating but now i am tired,frustrated,0.9104405377210928,"It is completely natural to feel tired and overwhelmed when exploring exciting but complex computer science topics. Recognizing when your brain needs a break is a very important part of the learning process.
+
+A great strategy in computer science is to step away from the screen when you hit a wall, which lets your brain process the logic in the background. Many programmers find that the solution to a tough coding problem suddenly becomes clear during a screen-free break.
+
+For your next step, close your laptop, grab a glass of water, and get some well-deserved rest. You can tackle this tomorrow with a fresh mind, and you will be amazed at how much easier it feels.",Computer Science,2026-07-14T12:43:43.119726
+ohh!This seems fasscinating but now i am tired,frustrated,0.9999997861628684,"It is completely normal to feel tired and a bit frustrated when diving into deep computer science topics, even when they are exciting. 
+
+A great strategy in computer science is to break large, complex coding problems into tiny, simple steps that you can tackle one at a time. 
+
+For now, close your laptop, get some well-deserved rest, and you can try tackling just the first small step of the problem tomorrow with a fresh mind.",Computer Science,2026-07-14T12:50:07.792459
+ohh!This seems fascinating but now i am tired,frustrated,0.3229176091299409,"It is completely natural to feel exhausted when tackling deep computer science topics, even when they are exciting. Recognizing that you need a break is a very smart and necessary part of the learning process.
+
+When studying complex concepts, try writing down a quick summary of your current thoughts or code comments before you stop. This simple habit makes it much easier to pick up right where you left off without draining your energy.
+
+For now, close your laptop and get some well-deserved rest so your brain can recharge. Whenever you are ready to come back, we can take on this fascinating challenge together.",Computer Science,2026-07-14T12:56:03.990431
+ohh!This seems fascinating but now i am tired,frustrated,0.3229176091299409,"I completely understand feeling tired, especially when you are exploring such fascinating but complex computer science topics. It is totally normal to feel drained after a long study session.
+
+When you are tired, a great strategy is to write down your current thoughts or quick code comments so you know exactly where to start when you return. This prevents you from losing your momentum and saves you from trying to remember everything later.
+
+For now, I encourage you to close your laptop, take a well-deserved break, and get some rest. We can dive back into this together whenever you feel refreshed and ready.",Computer Science,2026-07-14T13:00:54.406090
+ i tried solving this problem but got stuck,confident,0.3468827196115741,"It is completely normal to get stuck on a tough math problem, even when you start out feeling ready to tackle it. Your determination to try is a great foundation, and facing a roadblock is just a natural part of learning math.
+
+When you get stuck, try breaking the problem down by writing down what information you already know and what you are trying to find. Sometimes drawing a simple diagram or testing a smaller, simpler number can help you see the pattern.
+
+Please share the problem and your first few steps with me. We can look at it together and find the path forward.",Mathematics,2026-07-14T13:10:45.808291
+this is a good question,confident,0.4505264310713712,"It is great that you are feeling confident and excited about tackling this physics question. Believing in your abilities is a wonderful starting point for solving tough problems.
+
+One excellent strategy is to start by drawing a quick diagram to visualize the scenario and label all your known variables. This helps translate the physical concept into a clear mathematical starting point.
+
+Let us take the next step by writing down the main formula you think we need, and we can work through the solution together.",Physics,2026-07-14T13:24:20.066564
+i understand clearly now thanks,confident,0.5895072238390431,"It is wonderful to hear that you are feeling confident and have a clear understanding of this concept now. 
+
+For your next physics challenges, try drawing a quick diagram for every problem to help you visualize how different forces or variables interact. 
+
+As a great next step, try explaining the steps you just took to someone else or apply them to a slightly different problem to lock in your knowledge. Keep up the amazing work!",Physics,2026-07-14T13:25:21.618112
+i am so confused about this topic,frustrated,0.3468896199968528,"It is completely normal to feel frustrated when a physics topic feels confusing, as these concepts can be very challenging at first. Please remember that struggling with a new concept is just a natural part of the learning process.
+
+When you are stuck, try drawing a simple diagram of the problem to visualize what is happening before you look at any math equations. This helps connect the physical concept to the numbers and makes the problem much easier to understand.
+
+As a next step, tell me the specific topic or question you are working on, and we can break it down together. We will take it one slow, easy step at a time to help you build your confidence.",Physics,2026-07-14T13:28:16.144710
+i am curious to learn this question,curious,0.590011115361828,"It is wonderful that you are approaching this physics problem with curiosity, as being curious is the best way to learn. Having a starting confidence of 59% is a great place to begin exploring and building your understanding.
+
+A great strategy for physics is to always draw a quick sketch of the situation and list your known variables first. This helps you visualize what is happening before you try to solve any equations.
+
+Go ahead and share the physics question with me now. We can work through it together one step at a time to build up your confidence.",Physics,2026-07-14T13:29:49.717294
+i am confusing about this topic,frustrated,0.4042450189590454,I understand this is frustrating! Let's try a simpler approach...,Computer Science,2026-07-15T11:14:43.914170
+i am confusing about this topic,frustrated,0.4042450189590454,"It is completely understandable to feel frustrated when a computer science topic feels confusing, as these concepts can be very tricky at first. 
+
+A great strategy is to break the concept down into smaller pieces and write out what you want to achieve in plain English before looking at any code. 
+
+Please share the specific topic or problem you are working on, and we can take a deep breath and walk through it together step-by-step.",Computer Science,2026-07-15T11:26:18.236654
+i am confusing about this topic,frustrated,0.4042450189590454,"It is completely normal to feel frustrated when trying to grasp new Computer Science concepts, and many students experience this exact same hurdle. Please do not be discouraged, as we can definitely make sense of this together.
+
+When a topic feels overwhelming, a great strategy is to break it down into smaller parts and write out how it works in plain English before writing any code. This technique, known as pseudocode, helps you focus on the logic without worrying about syntax rules.
+
+To get started, tell me which specific topic or problem is giving you trouble, and we can take a look at it together step-by-step.",Computer Science,2026-07-15T11:29:31.295493
+i am confusing about this topic,frustrated,0.4042450189590454,I understand this is frustrating! Let's try a simpler approach...,Computer Science,2026-07-15T11:33:44.308651
+i am confusing about this topic,frustrated,0.4042450189590454,I understand this is frustrating! Let's try a simpler approach...,Computer Science,2026-07-15T11:40:44.670404
+"i am confused about the chapter
+",confused,0.5758565073837233,I see you might be confused. Let me break this down step-by-step...,Computer Science,2026-07-15T11:48:38.130856
+"i am confused about the chapter
+",confused,0.5758565073837233,"It is completely normal to feel confused when tackling new computer science concepts, and you are definitely not alone in feeling this way. I am here to help you break it down and make sense of it.
+
+A great strategy for computer science is to break the chapter down into smaller, bite-sized pieces and focus on just one concept at a time. Writing out a quick diagram or tracing a simple code example on paper can make abstract ideas much clearer.
+
+As a next step, could you tell me the title of the chapter or name one specific topic that feels the most confusing? We can look at that one small part together and work through it step-by-step.",Computer Science,2026-07-15T11:48:54.253907
+"i am confused about this topic
+",frustrated,0.3425902178967273,"I completely understand that feeling frustrated and confused is a normal part of learning computer science, especially when tackling complex new topics.
+
+To help make things easier, try breaking the concept down into smaller pieces and writing out how it works in plain English before looking at any code.
+
+Could you share the specific topic you are working on? We can go through it together step-by-step and clear up any confusion.",Computer Science,2026-07-15T11:49:13.082381
+"i am confused about this topic
+",frustrated,0.34259021789672733,"I understand that you are feeling frustrated right now, and it is completely normal to feel confused when tackling complex computer science concepts. Learning these topics takes time, so please don't be too hard on yourself.
+
+One great strategy is to break the confusing topic down into smaller parts and write out how it works in plain English before you try to write any code. This is called writing pseudocode, and it helps make the logical steps much clearer.
+
+As a next step, reply and let me know the specific computer science topic or problem you are working on. We can break it down together step-by-step, and I know you can get the hang of it.",Computer Science,2026-07-15T11:50:39.891774

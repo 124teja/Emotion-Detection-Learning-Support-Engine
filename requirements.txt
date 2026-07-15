@@ -1,0 +1,13 @@
+tensorflow
+keras
+torch
+transformers
+nltk
+pandas
+numpy
+plotly
+streamlit
+google-generativeai
+python-dotenv
+mysql-connector-python
+scikit-learn
