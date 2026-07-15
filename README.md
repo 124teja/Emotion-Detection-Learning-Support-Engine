@@ -4,7 +4,7 @@ An AI-powered Streamlit application that detects a student's emotional state fro
 
 ## Demo
 
-📹 See `demo/app_demo.mp4` for a full walkthrough of the app — field selection, emotion detection, AI-generated responses, and the analytics dashboard.
+📹 [Watch the full demo video here](https://drive.google.com/file/d/172zIj9gy3DOIl11TIeuo2cJLiqBDTdf5/view?usp=sharing) — field selection, emotion detection, AI-generated responses, and the analytics dashboard.
 
 ## Features
 
@@ -32,8 +32,6 @@ emotion detection/
 ├── app.py                          # Main Streamlit application
 ├── requirements.txt                # Python dependencies
 ├── .env                             # Environment variables (Gemini API key)
-├── demo/
-│   └── app_demo.mp4                 # Demo video walkthrough
 ├── models/
 │   ├── bltsm/                       # BiLSTM model, tokenizer, label encoder
 │   └── bert_emotion_model_final/    # Fine-tuned BERT model files
@@ -44,8 +42,11 @@ emotion detection/
 │   └── predict.py                   # Keyword-based prediction boosting
 ├── emotion_response_examples.csv    # Logged interactions
 ├── emotion_response_mapping.csv     # Emotion-response pair reference
-└── PROJECT_ANALYSIS_REPORT.md       # Detailed technical writeup
+├── DOCUMENTATION.md                 # Additional documentation
+└── PROJECT_ANALYSIS_REPORT.md       # Detailed technical writeup & bugfix log
 ```
+
+> **Note:** The demo video was moved off GitHub (Google Drive) to keep the repository lightweight — see the Demo section above.
 
 ## Setup & Installation
 
@@ -63,6 +64,7 @@ emotion detection/
    ```
    GEMINI_API_KEY=your_key_here
    ```
+   ⚠️ Never commit your real API key to this file or to GitHub — this is just a placeholder showing the expected format. Keep your actual key only in your local `.env` file (already excluded via `.gitignore`).
 5. Ensure trained model files are present under `models/bltsm/` and `models/bert_emotion_model_final/`
    > **Note:** `model.safetensors` (BERT weights, ~255MB) is excluded from this repository due to GitHub's file size limits. Download it separately from https://drive.google.com/file/d/1o4lsATDqNSnoKo4VEBCtkgJVK0mBtghc/view?usp=sharing and place it in `models/bert_emotion_model_final/`, or retrain using the notebook described in `PROJECT_ANALYSIS_REPORT.md`.
 6. Run the app:
@@ -77,7 +79,13 @@ Both models were trained on Kaggle using GPU acceleration:
 - **BiLSTM**: Bidirectional LSTM with focal loss for class imbalance, further fine-tuned on a student-domain-specific dataset (~99% validation accuracy on fine-tuning set)
 - **BERT**: Fine-tuned `distilbert-base-uncased` for 3 epochs, achieving ~72% test accuracy with strong macro F1-score (0.77) across all 5 classes
 
-See `PROJECT_ANALYSIS_REPORT.md` for full technical details and performance metrics.
+See `PROJECT_ANALYSIS_REPORT.md` for full technical details, performance metrics, and a log of bugs found and fixed during code review (keyword-matching false positives, a baseline confidence bias in BERT's inference logic, and preprocessing issues that silently broke certain keyword matches).
+
+## Known Limitations
+
+- **BERT produces very high-confidence predictions** (often 95%+) on in-domain text, which means it rarely surfaces a second "mixed" emotion above the confidence threshold used for BiLSTM. This is a genuine architectural difference between the two models, not a bug.
+- **No "Neutral"/"Other" class** — since the model only recognizes 5 emotions, unrelated or off-topic input is still forced into one of them, sometimes with misleadingly high confidence.
+- **Keyword-boosting is rule-based**, not learned, and can be fooled by phrasing outside its keyword set — though the keyword lists have been audited to remove overly generic trigger words.
 
 ## Author
 
