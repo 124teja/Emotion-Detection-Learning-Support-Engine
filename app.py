@@ -14,10 +14,7 @@ from src.predict import EmotionPredictor
 load_dotenv()
 api_key = os.getenv("GEMINI_API_KEY")
 
-
 client = genai.Client(api_key=api_key) if api_key else None
-print(f"DEBUG: api_key loaded = {api_key is not None}")
-print(f"DEBUG: client created = {client is not None}")
 
 st.set_page_config(page_title="AI Learning Assistant", page_icon="🎓", layout="wide")
 
@@ -55,6 +52,16 @@ def load_keyword_booster(_classes):
     return EmotionPredictor(_classes)
 
 
+def get_mixed_emotions(scores, threshold=0.15):
+    sorted_emotions = sorted(scores.items(), key=lambda x: x[1], reverse=True)
+    primary = sorted_emotions[0]
+    mixed = [primary]
+    for emotion_name, score in sorted_emotions[1:]:
+        if score >= threshold:
+            mixed.append((emotion_name, score))
+    return mixed if len(mixed) > 1 else [primary]
+
+
 def get_gemini_response(field, problem, emotion, confidence):
     if not client:
         return None
@@ -73,7 +80,11 @@ Use simple, clear language. Keep each point to 1-2 sentences. No markdown format
 """
         response = client.models.generate_content(model="gemini-flash-latest", contents=prompt)
         return response.text.strip()
-    except Exception:
+    except Exception as e:
+        # TEMP DEBUG: print the real error to the terminal so we can see
+        # why Gemini calls are silently falling back to the template.
+        # Remove this print once the root cause is fixed.
+        print(f"GEMINI ERROR: {e}")
         return None
 
 
@@ -112,51 +123,40 @@ def save_to_csv(field, problem, emotion, confidence, ai_response):
         return False
 
 
-def main():
-    st.title("🤖 Emotion-Aware Learning Assistant")
-    st.write("Get personalized help based on your field and emotional state")
+def add_to_history(field, problem, emotion, confidence, ai_response, bilstm_scores, bert_result=None):
+    mixed_emotions = get_mixed_emotions(bilstm_scores)
+    emotion_label = " + ".join([em[0] for em in mixed_emotions]) if len(mixed_emotions) > 1 else emotion
 
-    # Function to detect mixed sentiment
-    def get_mixed_emotions(scores, threshold=0.15):
-        sorted_emotions = sorted(scores.items(), key=lambda x: x[1], reverse=True)
-        primary = sorted_emotions[0]
-        mixed = [primary]
+    st.session_state.emotion_history.append({
+        'timestamp': datetime.now(),
+        'field': field,
+        'problem': problem,
+        'emotion': emotion_label,
+        'confidence': confidence,
+        'ai_response': ai_response,
+        'all_scores': bilstm_scores,
+        'model': 'BiLSTM'
+    })
 
-        for emotion, score in sorted_emotions[1:]:
-            if score >= threshold:
-                mixed.append((emotion, score))
-
-        return mixed if len(mixed) > 1 else [primary]
-
-    def add_to_history(field, problem, emotion, confidence, ai_response, bilstm_scores, bert_result=None):
-        mixed_emotions = get_mixed_emotions(bilstm_scores)
-        emotion_label = " + ".join([em[0] for em in mixed_emotions]) if len(mixed_emotions) > 1 else emotion
+    if bert_result:
+        bert_mixed = get_mixed_emotions(bert_result['scores'])
+        bert_emotion_label = " + ".join([em[0] for em in bert_mixed]) if len(bert_mixed) > 1 else bert_result['emotion']
 
         st.session_state.emotion_history.append({
             'timestamp': datetime.now(),
             'field': field,
             'problem': problem,
-            'emotion': emotion_label,
-            'confidence': confidence,
+            'emotion': bert_emotion_label,
+            'confidence': bert_result['confidence'],
             'ai_response': ai_response,
-            'all_scores': bilstm_scores,
-            'model': 'BiLSTM'
+            'all_scores': bert_result['scores'],
+            'model': 'BERT'
         })
 
-        if bert_result:
-            bert_mixed = get_mixed_emotions(bert_result['scores'])
-            bert_emotion_label = " + ".join([em[0] for em in bert_mixed]) if len(bert_mixed) > 1 else bert_result['emotion']
 
-            st.session_state.emotion_history.append({
-                'timestamp': datetime.now(),
-                'field': field,
-                'problem': problem,
-                'emotion': bert_emotion_label,
-                'confidence': bert_result['confidence'],
-                'ai_response': ai_response,
-                'all_scores': bert_result['scores'],
-                'model': 'BERT'
-            })
+def main():
+    st.title("🤖 Emotion-Aware Learning Assistant")
+    st.write("Get personalized help based on your field and emotional state")
 
     preprocessor, bilstm_model, bert_model = load_models()
     keyword_booster = load_keyword_booster(bilstm_model.classes)

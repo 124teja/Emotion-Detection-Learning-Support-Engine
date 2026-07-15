@@ -152,8 +152,15 @@ To help make things easier, try breaking the concept down into smaller pieces an
 
 Could you share the specific topic you are working on? We can go through it together step-by-step and clear up any confusion.",Computer Science,2026-07-15T11:49:13.082381
 "i am confused about this topic
-",frustrated,0.34259021789672733,"I understand that you are feeling frustrated right now, and it is completely normal to feel confused when tackling complex computer science concepts. Learning these topics takes time, so please don't be too hard on yourself.
+",frustrated,0.3425902178967273,"I understand that you are feeling frustrated right now, and it is completely normal to feel confused when tackling complex computer science concepts. Learning these topics takes time, so please don't be too hard on yourself.
 
 One great strategy is to break the confusing topic down into smaller parts and write out how it works in plain English before you try to write any code. This is called writing pseudocode, and it helps make the logical steps much clearer.
 
 As a next step, reply and let me know the specific computer science topic or problem you are working on. We can break it down together step-by-step, and I know you can get the hang of it.",Computer Science,2026-07-15T11:50:39.891774
+i am confused about this topic,frustrated,0.3425902178967273,I understand this is frustrating! Let's try a simpler approach...,Computer Science,2026-07-15T19:44:03.838428
+i am confused about this chapter,confused,0.3258289498241238,I see you might be confused. Let me break this down step-by-step...,Computer Science,2026-07-15T19:45:09.552245
+i am confused about this topic,frustrated,0.34259021789672733,"I completely understand that feeling confused by a new computer science topic can be incredibly frustrating. It is a completely normal part of the learning process, especially when dealing with complex concepts for the first time.
+
+When you are stuck, a great strategy is to break the topic down into its smallest possible parts and write out a simple example on paper. This helps make abstract logic feel much more concrete and manageable.
+
+As a next step, tell me which specific topic or problem is causing the confusion, and we can break it down together. You are fully capable of mastering this, and we will figure it out one step at a time.",Computer Science,2026-07-15T19:53:51.736928
